@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "Test SunCo Vopero V1.0 Pre-Alpha",
+    "short_description": "App Demo de Integracion con SunCo para Mensajes Salientes",
+    "long_description": "App Demo de Integracion con SunCo para Mensajes Salientes",
+    "installation_instructions": "Load the .Zip File"
+  }
+}

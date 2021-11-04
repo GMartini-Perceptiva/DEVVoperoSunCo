@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- BOOTSTRAP 5  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- ZENDESK INTEGRATION -->
+    <script src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+
+    <!-- JS  -->
+    <script src="yabascript.js"></script>
+
+  </head>
+
+  <body>
+      <div id="mainDiv">
+
+        <div>
+         
+          <!-- Lista y boton  -->
+
+          <h1 style="color:#198754; text-align: center;">Seleccione una plantilla</h1>
+          <select class="form-select form-select-lg mb-3" name="Plantillas" id="listaPlantillas">
+            <optgroup label="Plantillas Genericas">
+            <option value="1">Respuesta Rapida Generica</option>
+            <option value="2">No hay stock</option>
+            <option value="3">Mas informacion</option>
+            <option value="4">Contacto</option>
+          </optgroup>
+          <optgroup label="Campañas de Publicidad">
+            <option value="5">Campaña Invita amigos</option>
+            <option value="6">Campaña 50% OFF</option>
+          </optgroup>
+          </select>
+
+          <button type="button" class="btn btn-success btn-sm" onclick="cargarPlantilla()" style="align-self: center;">Cargar Plantilla</button>
+
+        </div>
+
+        <!-- Separadores  -->
+        <br>
+        <br>
+
+        <!-- Div de carga de Plantilla  -->
+        <div id="plantilla" class="mb-3">
+          <!-- ACA VA LA PLANTILLA  -->
+        </div>
+      
+  </body>
+</html>
